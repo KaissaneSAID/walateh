@@ -9,7 +9,7 @@ $equipement = $requete->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <style>
         .desc{
-        max-width: 3em; /* ajustez la hauteur en fonction du nombre de lignes souhaité */
+        max-height: 4em; /* ajustez la hauteur en fonction du nombre de lignes souhaité */
       overflow: hidden;
        
     }
@@ -29,7 +29,7 @@ $equipement = $requete->fetchAll(PDO::FETCH_ASSOC);
     <div class="page-sub-header">
     <h3 class="page-title">Equipement</h3>
     <ul class="breadcrumb">
-    <li class="breadcrumb-item"><a href="students.html">Equipement</a></li>
+    <li class="breadcrumb-item"><a href="dashboard.php">dashboard</a></li>
     <li class="breadcrumb-item active">Tous les Equipements</li>
     </ul>
     </div>
@@ -80,15 +80,15 @@ $equipement = $requete->fetchAll(PDO::FETCH_ASSOC);
     <td><?php echo $equi['id'];?></td>
     <td>
     <h2 class="table-avatar">
-    <a href="student-details.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="../img/<?php echo $equi['photo'];?>" alt="User Image"></a>
+    <a href="" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="../img/<?php echo $equi['photo'];?>" alt="User Image"></a>
     </h2>
     </td>
     <td><?php echo $equi['libelle'];?></td>
-    <td class ="desc"><?php echo $equi['description'];?></td>
+    <td class="desc"><?php echo $equi['description'];?></td>
    
     <td class="text-end">
     <div class="actions ">
-    <a href="delete-equipement.php?id=<?php echo $equi['id'];?>" class="btn btn-sm bg-success-light me-2 " >
+    <a href="delete-equipement.php?id=<?php echo $equi['id'];?>" class="btn btn-sm bg-success-light me-2 "onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet element ?')" >
     <i class="feather-delete"></i>
     </a>
     <a href="modify-equipment.php?id=<?php echo $equi['id'];?>" class="btn btn-sm bg-danger-light"  >

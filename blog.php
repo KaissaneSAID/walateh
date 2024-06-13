@@ -1,4 +1,6 @@
-<?php $pdo = new PDO("mysql:host=localhost;dbname=walatech", "root", "", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+<?php
+session_start();
+$pdo = new PDO("mysql:host=localhost;dbname=walatech", "root", "", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 $requete = $pdo->query("SELECT * FROM actualite");
 $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);
 
@@ -66,6 +68,9 @@ $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);
                             <div class="d-flex justify-content-between border-top p-4">
                                 <div class="d-flex align-items-center">
                                     <small><?php echo $actu['dates'];?></small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <small> <i style="color:#1D85FF" class="fas fa-eye"></i> <?php $idActualite = $actu['id'];  echo $_SESSION['visites'][$idActualite];?></small>
                                 </div>
                                 
                             </div>

@@ -27,7 +27,7 @@
     <div class="page-sub-header">
     <h3 class="page-title">services</h3>
     <ul class="breadcrumb">
-    <li class="breadcrumb-item"><a href="students.html">service</a></li>
+    <li class="breadcrumb-item"><a href="dashboard.php">dashboard</a></li>
     <li class="breadcrumb-item active">Tous les services</li>
     </ul>
     </div>
@@ -91,7 +91,7 @@
    
     <td class="text-end">
     <div class="actions ">
-    <a href="delete-service.php?id=<?php echo $serv['id'];?>" class="btn btn-sm bg-success-light me-2 ">
+    <a href="delete-service.php?id=<?php echo $serv['id'];?>" class="btn btn-sm bg-success-light me-2 "onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet element ?')">
     <i class="feather-delete"></i>
     </a>
     <a href="edit-service.php?id=<?php echo $serv['id'];?>" class="btn btn-sm bg-danger-light">

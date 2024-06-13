@@ -42,7 +42,7 @@
 <div class="page-sub-header">
 <h3 class="page-title">Ajout actualités</h3>
 <ul class="breadcrumb">
-<li class="breadcrumb-item"><a href="students.html">actualités</a></li>
+<li class="breadcrumb-item"><a href="dashboard.php">dashboard</a></li>
 <li class="breadcrumb-item active">Ajout actualités</li>
 </ul>
 </div>

@@ -82,7 +82,7 @@ if (!empty($_FILES['photo']['name'])) {
 <div class="page-sub-header">
 <h3 class="page-title">modifier l membres</h3>
 <ul class="breadcrumb">
-<li class="breadcrumb-item"><a href="students.html">membres</a></li>
+<li class="breadcrumb-item"><a href="dashboard.php">dashboard</a></li>
 <li class="breadcrumb-item active">modifier l membres</li>
 </ul>
 </div>

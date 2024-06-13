@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="page-sub-header">
 <h3 class="page-title">Ajout service</h3>
 <ul class="breadcrumb">
-<li class="breadcrumb-item"><a href="students.html">service</a></li>
+<li class="breadcrumb-item"><a href="dashboard.php">dashboard</a></li>
 <li class="breadcrumb-item active">Ajout service</li>
 </ul>
 </div>

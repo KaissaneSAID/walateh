@@ -1,6 +1,24 @@
 
 <?php
 $pdo = new PDO("mysql:host=localhost;dbname=walatech", "root", "", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+session_start();
+// Vérifiez si l'ID de l'actualité est présent dans l'URL
+if(isset($_GET['id'])) {
+    $idActualite = $_GET['id'];
+
+    // Vérifiez si la variable de session pour cette actualité existe
+    if(!isset($_SESSION['visites'][$idActualite])) {
+        // Si la variable de session n'existe pas, initialisez-la à 1
+        $_SESSION['visites'][$idActualite] = 1;
+    } else {
+        // Si la variable de session existe, incrémentez-la
+        $_SESSION['visites'][$idActualite]++;
+    }
+    $mvisite = "Nombre de visites : " . $_SESSION['visites'][$idActualite];
+    // Affichez le nombre de visites pour cette actualité
+  
+}
+
 
   if (isset($_GET['id'])) {
     $actu = $_GET['id'];
@@ -60,7 +78,7 @@ $requetes = $pdo->query("SELECT * FROM commentaire WHERE idActu = $actu ");
                     <?php endforeach ?>
                     <div class="d-flex justify-content-between bg-light rounded p-4 mt-4 mb-4">
                         <div class="d-flex align-items-center">
-                            <span>admin</span>
+                            <span>admin </span>
                         </div>
                         
                     </div>

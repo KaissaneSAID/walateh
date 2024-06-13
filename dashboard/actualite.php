@@ -28,7 +28,7 @@ $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);?>
     <div class="page-sub-header">
     <h3 class="page-title">Actualités</h3>
     <ul class="breadcrumb">
-    <li class="breadcrumb-item"><a href="students.html">actualité</a></li>
+    <li class="breadcrumb-item"><a href="dashboard.php">dashboard</a></li>
     <li class="breadcrumb-item active">Tous les actualités</li>
     </ul>
     </div>
@@ -92,7 +92,7 @@ $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);?>
     <a href="delete-actualite.php?id=<?php echo $actu['id'];?>" class="btn btn-sm bg-success-light me-2 ">
     <i class="feather-delete"></i>
     </a>
-    <a href="edit-actualite.php?id=<?php echo $actu['id'];?>" class="btn btn-sm bg-danger-light">
+    <a href="edit-actualite.php?id=<?php echo $actu['id'];?>" class="btn btn-sm bg-danger-light"onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet element ?')">
     <i class="feather-edit"></i>
     </a>
     </div>

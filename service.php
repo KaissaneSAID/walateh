@@ -115,7 +115,7 @@
                             <form method="post" enctype="multipart/form-data">
                                 <div class="row g-3">
                                     <div class="col-12 col-sm-6">
-                                        <input type="text" class="form-control bg-white border-0" placeholder="Votre nom" name="nom" style="height: 55px;">
+                                        <input type="text" class="form-control bg-white border-0" placeholder="Votre nom et prenom" name="nom" style="height: 55px;">
                                     </div>
                                     <div class="col-12 col-sm-6">
                                         <input type="text" class="form-control bg-white border-0" placeholder="Votre profession" name="profession" style="height: 55px;">

@@ -44,9 +44,9 @@ $membre = $requete->fetchAll(PDO::FETCH_ASSOC);
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
                                 <h3><?= $mbr['nom'] ?></h3>
-                                <h6 style="color: #1D85FF;" class="fw-normal fst-italic  mb-2"><?= $mbr['poste'] ?></h6>
-                                <h6 style="color: #1D85FF;" class="fw-normal fst-italic  mb-2"><?= $mbr['tel'] ?></h6>
-                                <h6 style="color: #1D85FF;" class="fw-normal fst-italic  mb-2"><?= $mbr['email'] ?></h6>
+                                <h6 style="color: #1D85FF;" class="fw-normal fst-italic  mb-2"><b>Poste : </b><?= $mbr['poste'] ?></h6>
+                                <h6 style="color: #1D85FF;" class="fw-normal fst-italic  mb-2"><b>Tel :</b>  <?= $mbr['tel'] ?></h6>
+                                <h6 style="color: #1D85FF;" class="fw-normal fst-italic  mb-2"> <b>Email</b>  <?= $mbr['email'] ?></h6>
                                 <p class="m-0"><?= $mbr['descriptions'] ?></p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">

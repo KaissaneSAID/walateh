@@ -72,10 +72,10 @@ if (!empty($_FILES['photo']['name'])) {
 <div class="row align-items-center">
 <div class="col-sm-12">
 <div class="page-sub-header">
-<h3 class="page-title">modifier l servicess</h3>
+<h3 class="page-title">modifier le services</h3>
 <ul class="breadcrumb">
-<li class="breadcrumb-item"><a href="students.html">servicess</a></li>
-<li class="breadcrumb-item active">modifier l servicess</li>
+<li class="breadcrumb-item"><a href="dashboard.php">dashboard</a></li>
+<li class="breadcrumb-item active">modifier le services</li>
 </ul>
 </div>
 </div>
