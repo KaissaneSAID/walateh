@@ -10,8 +10,9 @@ $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);
 <style>
    
         .desc{
-        max-height: 5em; /* ajustez la hauteur en fonction du nombre de lignes souhaité */
+        max-height: 6em; /* ajustez la hauteur en fonction du nombre de lignes souhaité */
       overflow: hidden;
+      text-align: justify;
       line-height: 1.2em;
        
     }
@@ -29,6 +30,9 @@ $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);
 .image-container:hover img {
   transform: scale(1.2); /* ajustez la valeur selon l'agrandissement souhaité */
 }
+.d-block:hover{
+    color: #1D85FF;
+}
 </style>
 
 <body>
@@ -39,6 +43,9 @@ $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);
 
     <!-- Blog Start -->
     <div class="container-fluid py-5">
+    <?php if (!empty($actualite)):
+            # code...
+        ?>
         <div class="">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
             <h5 style="color: #1D85FF;" class="d-inline-block  text-uppercase border-bottom border-5">Actualités</h5>
@@ -48,7 +55,7 @@ $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);
                     <div class="col-xl-3 col-lg-6">
                     <a href="detail.php?id=<?php echo $actu['id'];?>">
 
-                        <div class="bg-light rounded overflow-hidden">
+                        <div  class="bg-light card_equipement rounded overflow-hidden">
                             <div class="image-container">
                             <img style="height:250px; width:100%" class="img-fluid " src="img/<?= $actu['photo']?> " alt="">
                             </div>
@@ -60,9 +67,7 @@ $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);
                                 <div class="d-flex align-items-center">
                                     <small><?php echo $actu['dates'];?></small>
                                 </div>
-                                <div class="d-flex align-items-center">
-                                    <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
-                                </div>
+                                
                             </div>
                         </div>
                         </a>
@@ -72,6 +77,9 @@ $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);
                 
             </div>
         </div>
+        <?php else :?>
+            <h1 style="color: rgba(123, 119, 119, 0.468);" class="text-center ">Il n'existe pas encore d'actualité</h1>
+        <?php endif ?>
     </div>
     <!-- Blog End -->
     

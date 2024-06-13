@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>WALATECH</title>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <title>WALATECH</title>
+
+<link rel="shortcut icon" href="../img/LOGO_wala.jpg">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -40,7 +42,7 @@
                         <span class="text-white">|</span>
                         <a class="text-decoration-none text-white px-3" href=""> <i class="bi bi-telephone me-2"></i>+269 333 78 75</a>
                         <span class="text-white">|</span>
-                        <a class="text-decoration-none text-white px-3" href=""><i class="bi bi-envelope me-2"></i>djoumbe@gmail.com</a>
+                        <a class="text-decoration-none text-white px-3" href=""><i class="bi bi-envelope me-2"></i>BP :1690</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-end">
@@ -84,7 +86,7 @@
                                 <a href="historique.php" class="dropdown-item">Historique</a>
                                 <a href="team.php" class="dropdown-item">Les membres</a>
                                 <a href="domaine.php" class="dropdown-item">Domaines Operationnel</a>
-                                <a href="testimonial.php" class="dropdown-item">Mail</a>
+                                <a href="mail.php" class="dropdown-item">Mail</a>
                           
                             </div>
                         </div>
@@ -95,7 +97,7 @@
                             <div class="dropdown-menu m-0">
                                 <a href="service.php" class="dropdown-item">Services</a>
                                 <a href="equipement.php" class="dropdown-item">Equipements</a>
-                                <a href="team.html" class="dropdown-item">Offres</a>
+                                <a href="offres.php" class="dropdown-item">Offres</a>
                                 <a href="prix.php" class="dropdown-item">Tarifs</a>
                           
                             </div>
@@ -104,7 +106,7 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
                             <div class="dropdown-menu m-0">
                                 <a href="contact.php" class="dropdown-item">Nous ecrire</a>
-                                <a href="detail.html" class="dropdown-item">Achats</a>
+                                <a href="offres.php" class="dropdown-item">Achats</a>
                       
                           
                             </div>
@@ -125,7 +127,7 @@
                         <span class="text-dark">|</span>
                         <a class="text-decoration-none text-uppercase text-dark px-3" href="domaine.php"></i>Domaines Operationnel</a>
                         <span class="text-dark">|</span>
-                        <a class="text-decoration-none text-uppercase text-dark px-3" href=""></i>Mail</a>
+                        <a class="text-decoration-none text-uppercase text-dark px-3" href="mail.php"></i>Mail</a>
                     
                     </div>
                 </div>

@@ -9,7 +9,7 @@ $pdo = new PDO("mysql:host=localhost;dbname=walatech", "root", "", array(PDO::AT
     $requete = $pdo->query("SELECT * FROM actualite WHERE id = $actu");
     $actualite = $requete->fetchAll(PDO::FETCH_ASSOC);
 
-    $requetes = $pdo->query("SELECT * FROM actualite limit 4");
+    $requetes = $pdo->query("SELECT * FROM actualite limit 5");
     $actualites = $requetes->fetchAll(PDO::FETCH_ASSOC);
 
 }
@@ -34,6 +34,13 @@ $requetes = $pdo->query("SELECT * FROM commentaire WHERE idActu = $actu ");
     $nbcomm = $nbcom->fetchColumn();
 
 ?>
+<style>
+
+    .h5{
+        color: #1D85FF;
+    }
+</style>
+
 <body>
     <!-- Topbar Start -->
    <?php require('header.php') ?>
@@ -110,11 +117,13 @@ $requetes = $pdo->query("SELECT * FROM commentaire WHERE idActu = $actu ");
                     <h4 style="color: #1D85FF;" class="d-inline-block  text-uppercase border-bottom border-5 mb-4">à lire aussi</h4>
                     <?php foreach ($actualites as $act): 
                             if($act['id'] != $actu ): ?>
+                            <a href="detail.php?id=<?php echo $act['id'];?>">
                     <div class="d-flex rounded overflow-hidden mb-3">
                         <img class="img-fluid" src="img/<?= $act['photo']  ?>" style="width: 100px; height: 100px; object-fit: cover;" alt="">
-                        <a href="detail.php?id=<?php echo $act['id'];?>" class="h5 d-flex align-items-center bg-light px-3 mb-0"><?= $act['descriptions']  ?>
+                        <a href="detail.php?id=<?php echo $act['id'];?>" class="h5 d-flex align-items-center bg-light px-3 mb-0"><?= $act['titre']  ?>
                         </a>
                     </div>
+                    </a>
                     <?php endif ;
                             endforeach ?>
                 </div>
@@ -125,7 +134,7 @@ $requetes = $pdo->query("SELECT * FROM commentaire WHERE idActu = $actu ");
                 <!-- Image End -->
 
                 <!-- Tags Start -->
-                >
+                
                 <!-- Tags End -->
 
                 <!-- Plain Text Start -->

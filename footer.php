@@ -3,7 +3,7 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 style="color: #1D85FF;"  class="d-inline-block  text-uppercase border-bottom border-5 border-secondary mb-4">WALATECH</h4>
-                    <p class="mb-4">No dolore ipsum accusam no lorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus tenetur, quia quisquam, rem soluta ullam expedita perferendis quam doloribus, quos tempora porro debitis! Quam sint assumenda doloribus culpa tempore pariatur! Invidunt sed clita kasd clita et et dolor sed dolor</p>
+                    <p class="mb-4 "  >La société WALATECH est une société des Nouvelles technologies qui accompagne les entreprises dans les domaines informatiques et télécom pour fournir des services à valeur ajoutée en sous-traitant avec d’autres sociétés ou des opérateurs pour répondre les exigences et besoins de ses clients.</p>
                     </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 style="color: #1D85FF;" class="d-inline-block  text-uppercase border-bottom border-5 border-secondary mb-4">Societé</h4>
@@ -11,7 +11,7 @@
                         <a class="text-light mb-2" href="historique.php"><i class="fa fa-angle-right me-2"></i>Historique</a>
                         <a class="text-light mb-2" href="team.php"><i class="fa fa-angle-right me-2"></i>Les membres</a>
                         <a class="text-light mb-2" href="domaine.php"><i class="fa fa-angle-right me-2"></i>Domaines Operationnel</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Mail</a>
+                        <a class="text-light mb-2" href="mail.php"><i class="fa fa-angle-right me-2"></i>Mail</a>
                        
                     </div>
                 </div>
@@ -20,7 +20,7 @@
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="service.php"><i class="fa fa-angle-right me-2"></i>Services</a>
                         <a class="text-light mb-2" href="equipement.php"><i class="fa fa-angle-right me-2"></i>Equipements</a>
-                        <a class="text-light mb-2" href="offre.php"><i class="fa fa-angle-right me-2"></i>Offres</a>
+                        <a class="text-light mb-2" href="offres.php"><i class="fa fa-angle-right me-2"></i>Offres</a>
                         <a class="text-light mb-2" href="prix.php"><i class="fa fa-angle-right me-2"></i>Tarifis</a>
 
                     </div>
@@ -29,7 +29,7 @@
                     <h4 style="color: #1D85FF;" class="d-inline-block  text-uppercase border-bottom border-5 border-secondary mb-4">Contact</h4>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="contact.php"><i class="fa fa-angle-right me-2"></i>Nous ecrire</a>
-                        <a class="text-light mb-2" href="achat.php"><i class="fa fa-angle-right me-2"></i>Achats</a>
+                        <a class="text-light mb-2" href="offres.php"><i class="fa fa-angle-right me-2"></i>Achats</a>
                 
 
                     </div>

@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,7 +28,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styls.css" rel="stylesheet">
 </head>
 <body>
 <div style="background-color: #1D85FF; " class="container-fluid py-2 border-bottom d-none d-lg-block">
@@ -84,7 +84,7 @@
                                 <a href="historique.php" class="dropdown-item">Historique</a>
                                 <a href="team.php" class="dropdown-item">Les membres</a>
                                 <a href="domaine.php" class="dropdown-item">Domaines Operationnel</a>
-                                <a href="testimonial.php" class="dropdown-item">Mail</a>
+                                <a href="mail.php" class="dropdown-item">Mail</a>
                           
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                             <div class="dropdown-menu m-0">
                                 <a href="service.php" class="dropdown-item">Services</a>
                                 <a href="equipement.php" class="dropdown-item">Equipements</a>
-                                <a href="team.html" class="dropdown-item">Offres</a>
+                                <a href="offres.php" class="dropdown-item">Offres</a>
                                 <a href="prix.php" class="dropdown-item">Tarifs</a>
                           
                             </div>
@@ -104,7 +104,7 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
                             <div class="dropdown-menu m-0">
                                 <a href="contact.php" class="dropdown-item">Nous ecrire</a>
-                                <a href="detail.html" class="dropdown-item">Achats</a>
+                                <a href="offres.php" class="dropdown-item">Achats</a>
                       
                           
                             </div>

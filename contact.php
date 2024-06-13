@@ -1,5 +1,25 @@
 
+<?php
+// Vérifie si le formulaire a été soumis
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Connexion à la base de données (à adapter selon votre configuration)
+    $pdo = new PDO("mysql:host=localhost;dbname=walatech", "root", "", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
+    // Assurez-vous que les données nécessaires sont présentes
+    if (isset($_POST['nom'])&& ($_POST['email']) && isset($_POST['sujet']) && isset($_POST['message'])) {
+        // Traitement de la photo
+        
+
+        // Insertion des données dans la table actualite
+        $stmt = $pdo->prepare("INSERT INTO contact (nom, email, sujet, messages) VALUES (?, ?, ?, ?)");
+        $stmt->execute([$_POST['nom'],$_POST['email'] ,$_POST['sujet'], $_POST['message']]);
+
+        // Redirection après l'envoi du formulaire (facultatif)
+        header('location:contact.php');
+        exit();
+    }
+}
+?>
 <body>
     <!-- Topbar Start -->
     <?php require('header.php') ?>
@@ -57,7 +77,7 @@
             <div class="row justify-content-center position-relative" style="margin-top: -200px; z-index: 1;">
                 <div class="col-lg-8">
                     <div class="bg-white rounded p-5 m-5 mb-0">
-                        <form>
+                        <form method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control bg-light border-0" name="nom" placeholder="votre nom" style="height: 55px;" required>

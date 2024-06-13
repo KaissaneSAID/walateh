@@ -1,61 +1,53 @@
-<?php require('headertwo.php') ?>
 
-<div class="container-fluid py-5">
-    <div class="container">
-        <div class="text-center mx-auto mb-2" style="max-width: 500px;">
-            <h5 style="color: #1D85FF;" class="d-inline-block  text-uppercase border-bottom border-5">domaines operationnel</h5>
-        </div>
-        <div class="mb-5">
-            <h5 style="color:#1D85FF ;" class="d-inline-block  text-uppercase border-bottom border-5 mb-4">à lire aussi</h5>
-                        
-            <div class="d-flex rounded overflow-hidden mb-3">
-                <img class="img-fluid" src="img/1 (1).jpg" style="width: 200px; height: 200px; object-fit: cover;" alt="">
-                <div class="h5 bg-light px-3 mb-0">
+<style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-                    <a href="" > <h3 class="text-uppercase mt-3" style="color:#1D85FF ;">titre</h3></a>
-                    <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam harum dolorum minus. Molestias beatae, earum tempora ducimus fuga quod odio, libero nihil eius debitis pariatur reprehenderit nam esse consectetur.
-                    </p>   
-                </div>   
-            </div>
 
-            <div class="d-flex rounded overflow-hidden mb-3">
-                <img class="img-fluid" src="img/1 (1).jpg" style="width: 200px; height: 200px; object-fit: cover;" alt="">
-                <div class="h5 bg-light px-3 mb-0">
 
-                    <a href="" > <h3 class="text-uppercase mt-3" style="color:#1D85FF ;">titre</h3></a>
-                    <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam harum dolorum minus. Molestias beatae, earum tempora ducimus fuga quod odio, libero nihil eius debitis pariatur reprehenderit nam esse consectetur.
-                    </p>   
-                </div>   
-            </div>
-            
-                    
-        </div>
-        <div class="mb-5">
-            <h5 style="color:#1D85FF ;" class="d-inline-block  text-uppercase border-bottom border-5 mb-4">à lire aussi</h5>
-                        
-            <div class="d-flex rounded overflow-hidden mb-3">
-                <img class="img-fluid" src="img/1 (1).jpg" style="width: 200px; height: 200px; object-fit: cover;" alt="">
-                <div class="h5 bg-light px-3 mb-0">
+.containerss {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
 
-                    <a href="" > <h3 class="text-uppercase mt-3" style="color:#1D85FF ;">titre</h3></a>
-                    <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam harum dolorum minus. Molestias beatae, earum tempora ducimus fuga quod odio, libero nihil eius debitis pariatur reprehenderit nam esse consectetur.
-                    </p>   
-                </div>   
-            </div>
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto 20px;
+}
 
-            <div class="d-flex rounded overflow-hidden mb-3">
-                <img class="img-fluid" src="img/1 (1).jpg" style="width: 200px; height: 200px; object-fit: cover;" alt="">
-                <div class="h5 bg-light px-3 mb-0">
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
-                    <a href="" > <h3 class="text-uppercase mt-3" style="color:#1D85FF ;">titre</h3></a>
-                    <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam harum dolorum minus. Molestias beatae, earum tempora ducimus fuga quod odio, libero nihil eius debitis pariatur reprehenderit nam esse consectetur.
-                    </p>   
-                </div>   
-            </div>
-            
-                    
-        </div>
-        
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+
+
+    </style>
+
+<?php require('headertwo.php')?>
+<body>
+
+    <div class="containerss">
+        <div class="loader"></div>
+        <h1>Page en construction</h1>
+        <p>Cette page est en cours de construction. Merci de votre patience !</p>
     </div>
-</div>
+<?php require('footer.php')?>
 
